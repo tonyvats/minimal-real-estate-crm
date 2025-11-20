@@ -7,9 +7,12 @@ import Deals from './pages/Deals'
 import Insurances from './pages/Insurances'
 import Reminders from './pages/Reminders'
 
+// Определяем base path для роутера
+const basename = import.meta.env.BASE_URL || '/'
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <Layout>
         <Routes>
           <Route path="/" element={<Dashboard />} />
