@@ -1,0 +1,168 @@
+.reminder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reminder-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  border-left: 4px solid #4a90e2;
+}
+
+.reminder-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.reminder-card.upcoming {
+  border-left-color: #ff6b6b;
+  background: #fff5f5;
+}
+
+.reminder-card.sent {
+  opacity: 0.7;
+  border-left-color: #95a5a6;
+}
+
+.reminder-icon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.reminder-content {
+  flex: 1;
+}
+
+.reminder-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.reminder-header h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.sent-badge {
+  background: #27ae60;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.reminder-message {
+  color: #2c3e50;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.reminder-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.reminder-details span {
+  font-size: 13px;
+  color: #7f8c8d;
+}
+
+.reminder-client {
+  font-weight: 600;
+}
+
+.reminder-days {
+  padding: 4px 8px;
+  background: #e8f4f8;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.reminder-days.urgent {
+  background: #ff6b6b;
+  color: white;
+}
+
+.sent-time {
+  font-size: 12px;
+  color: #95a5a6;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.reminder-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mark-sent-btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mark-sent-btn:hover {
+  background: #229954;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  background: #fee;
+}
+
+.empty-list {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-list p {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.empty-hint {
+  font-size: 14px !important;
+  opacity: 0.7;
+}
+
