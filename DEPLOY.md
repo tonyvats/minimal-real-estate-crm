@@ -101,4 +101,3 @@ npm run preview
 ### GitHub Actions не запускается
 - Убедитесь, что включен GitHub Pages с источником "GitHub Actions"
 - Проверьте, что файл `.github/workflows/deploy.yml` находится в репозитории
-
